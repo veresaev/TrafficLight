@@ -17,19 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FiH-6H-EdL">
-                                <rect key="frame" x="121" y="136" width="151" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QqO-e9-nMq">
-                                <rect key="frame" x="121" y="294" width="151" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqO-e9-nMq">
+                                <rect key="frame" x="132" y="294" width="151" height="150"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-pe-hPf">
-                                <rect key="frame" x="121" y="452" width="151" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-pe-hPf">
+                                <rect key="frame" x="132" y="452" width="151" height="150"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eG-Wm-Qie">
@@ -44,13 +37,29 @@
                                     <action selector="startButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zoe-vA-Ukv"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiH-6H-EdL">
+                                <rect key="frame" x="132" y="136" width="151" height="150"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="FiH-6H-EdL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="94b-sX-ONR"/>
+                            <constraint firstItem="FiH-6H-EdL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="F22-ry-uvC"/>
+                            <constraint firstItem="QqO-e9-nMq" firstAttribute="top" secondItem="FiH-6H-EdL" secondAttribute="bottom" constant="8" symbolic="YES" id="HaF-vt-ync"/>
+                            <constraint firstItem="QqO-e9-nMq" firstAttribute="height" secondItem="FiH-6H-EdL" secondAttribute="height" id="ImA-CV-fNF"/>
+                            <constraint firstItem="DWU-pe-hPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="KzX-bK-1Ed"/>
+                            <constraint firstItem="DWU-pe-hPf" firstAttribute="height" secondItem="QqO-e9-nMq" secondAttribute="height" id="Mtj-L7-Nfe"/>
+                            <constraint firstItem="DWU-pe-hPf" firstAttribute="top" secondItem="QqO-e9-nMq" secondAttribute="bottom" constant="8" symbolic="YES" id="N7G-F8-LwO"/>
                             <constraint firstItem="7eG-Wm-Qie" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Swm-z7-4rh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QqO-e9-nMq" secondAttribute="trailing" constant="131" id="Xla-NG-hUU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7eG-Wm-Qie" secondAttribute="bottom" constant="80" id="ZFx-Lg-lzp"/>
+                            <constraint firstItem="QqO-e9-nMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="aGu-I0-2WK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DWU-pe-hPf" secondAttribute="trailing" constant="131" id="boj-5j-o2N"/>
+                            <constraint firstItem="7eG-Wm-Qie" firstAttribute="top" secondItem="DWU-pe-hPf" secondAttribute="bottom" constant="110" id="kGb-um-aGr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7eG-Wm-Qie" secondAttribute="trailing" constant="80" id="vga-So-BtI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FiH-6H-EdL" secondAttribute="trailing" constant="131" id="z2G-w3-Whp"/>
                         </constraints>
                     </view>
                     <connections>
